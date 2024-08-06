@@ -144,6 +144,7 @@ class CalculatorViewController: UIViewController {
     }
     
     @objc private func calculatorButtonDidTap(_ sender: CalculatorButton) {
+        sender.shine()
         viewModel.acceptButtonInput(sender.item)
     }
 }

@@ -106,6 +106,7 @@ class HomeViewController: UIViewController {
     }
     
     @objc private func calculatorButtonDidTap(_ sender: CalculatorButton) {
+        sender.shine()
         switch sender.item {
         case .function(let function) where function == .toRight:
             rightCalculator.setOperand(leftCalculator.getOperand())

@@ -24,6 +24,16 @@ class CalculatorButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func shine() {
+        UIView.animate(withDuration: 0.1, delay: 0.0, options: .allowUserInteraction, animations: {
+            self.alpha = 0.5
+        }) { (completion) in
+            UIView.animate(withDuration: 0.1, animations: {
+                self.alpha = 1
+            })
+        }
+    }
 }
 
 enum CalculatorButtonItem {
