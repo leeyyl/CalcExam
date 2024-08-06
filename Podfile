@@ -6,8 +6,8 @@ target 'CalcExam' do
   use_frameworks!
 
   # Pods for CalcExam
-  pod 'RxSwift'  
-  pod 'RxCocoa'
+  pod 'Gedatsu'
+  pod 'SnapKit'
 
   target 'CalcExamTests' do
     inherit! :search_paths
